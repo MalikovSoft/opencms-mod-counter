@@ -239,7 +239,7 @@ public class NewsCounter implements Counter, AutoCloseable {
 
         if (connection == null) {
             try {
-                OpenCms.getSqlManager().getConnection("default");
+                OpenCms.getSqlManager().getConnection(org.opencms.db.CmsDbPoolV11.getDefaultDbPoolName());
             } catch (SQLException e) {
                 LOG.error(e);
             }
