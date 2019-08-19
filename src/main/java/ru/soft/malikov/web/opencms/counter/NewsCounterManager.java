@@ -43,6 +43,9 @@ public class NewsCounterManager implements CounterManager {
     private static final Log LOG = CmsLog.getLog(NewsCounterManager.class);
 
 
+    public NewsCounterManager() {
+    }
+
     /**
      * Метод для удаления счетчика
      *
