@@ -15,7 +15,7 @@ public class NewsCounterManager implements CounterManager {
 
     private static final String DB_TABLE_NAME = "CMS_NCFU_NEWS_COUNTERS";
     private static final String SQL_CHECK_DB = "SELECT count(*) FROM " + DB_TABLE_NAME + ";";
-    private static final String SQL_CHECK_COUNTER = "SELECT count(*) FROM " + DB_TABLE_NAME + "WHERE COUNTER_KEY= ?;";
+    private static final String SQL_CHECK_COUNTER = "SELECT count(*) FROM " + DB_TABLE_NAME + " WHERE COUNTER_KEY= ?;";
 
     private static final String SQL_CREATE_COUNTER_ENTRY = "INSERT INTO "
             + DB_TABLE_NAME
